@@ -1,0 +1,16 @@
+[run]
+# Add branch coverage to report
+branch = True
+
+# Directories and files to not be included in test/branch coverage reports
+omit =
+   venv/*
+   tests/*
+
+[report]
+# Show which lines are not covered
+show_missing = True
+exclude_lines =
+# Do not report abstract method lines as not covered
+   pragma: no cover
+   @abstract
