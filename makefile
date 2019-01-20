@@ -1,6 +1,9 @@
 # This is a comment
 
-all: types lint test run
+all: format types lint test run
+
+format:
+	black penv/ tests/
 
 types:
 	mypy penv/
@@ -14,4 +17,4 @@ test:
 run:
 	python penv/example.py
 
-.PHONY: all types lint test run
+.PHONY: all format types lint test run

@@ -6,7 +6,7 @@ from penv.example import add
 
 class TestExample(TestCase):
     """Tests of example module"""
+
     def test_add_positive(self):
         """Test addition of positive numbers"""
         self.assertEqual(5, add(2, 3))
-        # x = 'this is very very very very long script that has no obvious reason to exist'
